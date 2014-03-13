@@ -1,0 +1,27 @@
+on boot
+
+#
+# Connectivity related services (Begin)
+#
+    chown system /sys/class/input/input6/enable
+    chown system /sys/class/input/input6/delay
+    chown system /sys/class/input/input6/wake
+    chown system /sys/class/input/input4/enable
+    chown system /sys/class/input/input4/wake
+    chown system /sys/class/input/input5/offsets
+    chown system /sys/class/input/input5/dynamic_matrix    
+    chown system /sys/devices/platform/msensor/driver/cpsopmode
+    chown system /sys/devices/platform/msensor/driver/cpsreptxy
+    chown system /sys/devices/platform/msensor/driver/cpsreptz
+
+service orientationd /system/bin/orientationd
+    user root
+    group system input
+
+service geomagneticd /system/bin/geomagneticd
+    user root
+    group system input
+
+#
+# Connectivity related services (End)
+#

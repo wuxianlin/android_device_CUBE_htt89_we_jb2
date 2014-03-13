@@ -14,5 +14,5 @@ $(call inherit-product, device/CUBE/htt89_we_jb2/device_htt89_we_jb2.mk)
 PRODUCT_DEVICE := htt89_we_jb2
 PRODUCT_NAME := cm_htt89_we_jb2
 PRODUCT_BRAND := CUBE
-PRODUCT_MODEL := htt89_we_jb2
-PRODUCT_MANUFACTURER := CUBE
+PRODUCT_MODEL := A5300
+PRODUCT_MANUFACTURER := alps

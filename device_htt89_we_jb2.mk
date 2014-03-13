@@ -17,6 +17,20 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
+# recovery
+
+PRODUCT_COPY_FILES += \
+    device/CUBE/htt89_we_jb2/recovery/advanced_meta_init.rc:recovery/root/advanced_meta_init.rc \
+    device/CUBE/htt89_we_jb2/recovery/factory_init.project.rc:recovery/root/factory_init.project.rc \
+    device/CUBE/htt89_we_jb2/recovery/factory_init.rc:recovery/root/factory_init.rc \
+    device/CUBE/htt89_we_jb2/recovery/fstab:recovery/root/fstab \
+    device/CUBE/htt89_we_jb2/recovery/meta_init.modem.rc:recovery/root/meta_init.modem.rc \
+    device/CUBE/htt89_we_jb2/recovery/meta_init.project.rc:recovery/root/meta_init.project.rc \
+    device/CUBE/htt89_we_jb2/recovery/meta_init.rc:recovery/root/meta_init.rc \
+    device/CUBE/htt89_we_jb2/recovery/sec.ko:recovery/root/sec.ko \
+    device/CUBE/htt89_we_jb2/recovery/ueventd.goldfish.rc:recovery/root/ueventd.goldfish.rc \
+    device/CUBE/htt89_we_jb2/recovery/ueventd.rc:recovery/root/ueventd.rc
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
